@@ -1,14 +1,15 @@
 package org.example.oops;
 
 public class Human {
-    int legs = 2;
-    int eyes = 2;
-    int ears = 2;
-    int nose = 1;
+    int legs;
+    int eyes;
+    int ears;
+    int nose;
     static String parentName = "xyz";
 
     Human() {
     }
+
     Human(int eyes) {
         this.eyes = eyes;
     }
@@ -33,7 +34,9 @@ public class Human {
         System.out.println("Walking with " + this.legs);
     }
 
-    static class Child {
-
+    void run(boolean flag,int legs) {
+       System.out.println("I am run");
     }
+
+
 }
