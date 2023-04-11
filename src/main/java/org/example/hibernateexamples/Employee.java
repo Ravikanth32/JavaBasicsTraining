@@ -15,4 +15,6 @@ public class Employee {
     private String name;
     @Column
     private String email;
+    @Transient
+    private String newFiled;
 }
